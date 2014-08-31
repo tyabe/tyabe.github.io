@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon-precomposed" sizes="152x152" />
+    <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+    <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+    <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
+    <link href="favicon.png" rel="shortcut icon" />
+    <link href="favicon.ico" rel="icon" type="image/ico" />
+    <title>nilidea.com</title><link href="stylesheets/bootstrap-420f20ce.css" rel="stylesheet" type="text/css" /><link href="stylesheets/main-5e156990.css" rel="stylesheet" type="text/css" /><link href="stylesheets/font-awesome.min-710a0d50.css" rel="stylesheet" type="text/css" /><link href="stylesheets/custom-9e85aee2.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+  </head>
+  <body class="index">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <h1>
+            nilidea.com
+          </h1>
+        </div>
+      </div>
+    </div>
+    <section id="info"></section>
+    <div id="info">
+      <div class="container">
+        <div class="centered">
+          <img class="img-responsive img-circle" src="http://www.gravatar.com/avatar/2c246b10eca87568dda9f431c1134cb3" />
+          <h3>
+            Takeshi Yabe / @tyabe
+          </h3>
+          <p>
+            Web Developer.
+          </p>
+          <p>
+            I loves Ruby, and have respect for rubyist.
+          </p>
+          <p>
+            I'm member of <a href="http://shibuyarb.doorkeeper.jp/">Shibuya.rb</a> , <a href="http://yokohamarb.doorkeeper.jp/">Yokohama.rb</a> and <a href="http://kaja.rubyist.net/">RubyKaja Team</a> .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="social">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <a href="https://github.com/tyabe" title="github"><span class="fa fa-stack fa-square fa-inverse fa-4x"><i class="fa fa-github fa-stack-1x"></i></span></a><a href="https://twitter.com/tyabe" title="twitter"><span class="fa fa-stack fa-square fa-inverse fa-4x"><i class="fa fa-twitter fa-stack-1x"></i></span></a><a href="https://www.facebook.com/nilidea" title="facebook"><span class="fa fa-stack fa-square fa-inverse fa-4x"><i class="fa fa-facebook fa-stack-1x"></i></span></a><a href="http://tyabe.hatenablog.jp/" title="blog"><span class="fa fa-stack fa-square fa-inverse fa-4x"><i class="fa fa-book fa-stack-1x"></i></span></a><a href="http://tyabe.hatenablog.com/" title="blog(note)"><span class="fa fa-stack fa-square fa-inverse fa-4x"><i class="fa fa-book fa-stack-1x"></i></span></a><a href="http://qiita.com/tyabe" title="qiita"><span class="fa fa-stack fa-square fa-inverse fa-4x"><i class="fa fa-book fa-stack-1x"></i></span></a>
+          </div>
+          <div class="col-lg-8 col-lg-offset-2">
+            <section class="coderwall" data-coderwall-orientation="(vertical or horizontal)" data-coderwall-username="tyabe"></section>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              GitHub Repos
+            </h3>
+            <div class="list-group" id="gh_repos">
+              <p class="loading">
+                Status updating...
+              </p>
+            </div>
+            <script type="text/javascript">
+              $(document).ready(function(){
+                if (!window.jXHR){
+                  var jxhr = document.createElement('script');
+                  jxhr.type = 'text/javascript';
+                  jxhr.src = '/javascripts/libs/jXHR-165af90b.js';
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(jxhr, s);
+                }
+                github.showRepos({
+                  user: 'tyabe',
+                  count: 5,
+                  skip_forks: true,
+                  target: '#gh_repos'
+                });
+              });
+            </script>
+            <script src="javascripts/github-f7df6871.js" type="text/javascript"></script>
+          </div>
+          <div class="col-md-6">
+            <h3>
+              Slides
+            </h3>
+            <ul>
+              <li>
+                <a href="http://www.slideshare.net/tyabe/presentations">SlideShare</a>
+              </li>
+              <li>
+                <a href="https://speakerdeck.com/tyabe">Speaker Deck</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="f">
+      <div class="container">
+        <div class="row">
+          <p>
+            Crafted with <i class="fa fa-heart"></i> by BlackTie.co.
+          </p>
+        </div>
+      </div>
+    </div><script src="javascripts/bootstrap-8e2e0459.js" type="text/javascript"></script>
+  </body>
+</html>
