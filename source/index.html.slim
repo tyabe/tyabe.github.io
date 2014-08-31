@@ -1,0 +1,82 @@
+.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      h1 nilidea.com
+section#info
+#info
+  .container
+    .centered
+      = image_tag gravatar_for('tyabe@nilidea.com'), class: 'img-responsive img-circle'
+      h3 Takeshi Yabe / @tyabe
+      p Web Developer.
+      p I loves Ruby, and have respect for rubyist.
+      p
+        | I'm member of
+        a<> href="http://shibuyarb.doorkeeper.jp/" Shibuya.rb
+        | ,
+        a<> href="http://yokohamarb.doorkeeper.jp/" Yokohama.rb
+        | and
+        a<> href="http://kaja.rubyist.net/" RubyKaja Team
+        | .
+#social
+  .container
+    .row.centered
+      .col-lg-8.col-lg-offset-2
+        a href="https://github.com/tyabe" title="github"
+          span.fa.fa-stack.fa-square.fa-inverse.fa-4x
+            i.fa.fa-github.fa-stack-1x
+        a href="https://twitter.com/tyabe" title="twitter"
+          span.fa.fa-stack.fa-square.fa-inverse.fa-4x
+            i.fa.fa-twitter.fa-stack-1x
+        a href="https://www.facebook.com/nilidea" title="facebook"
+          span.fa.fa-stack.fa-square.fa-inverse.fa-4x
+            i.fa.fa-facebook.fa-stack-1x
+        a href="http://tyabe.hatenablog.jp/" title="blog"
+          span.fa.fa-stack.fa-square.fa-inverse.fa-4x
+            i.fa.fa-book.fa-stack-1x
+        a href="http://tyabe.hatenablog.com/" title="blog(note)"
+          span.fa.fa-stack.fa-square.fa-inverse.fa-4x
+            i.fa.fa-book.fa-stack-1x
+        a href="http://qiita.com/tyabe" title="qiita"
+          span.fa.fa-stack.fa-square.fa-inverse.fa-4x
+            i.fa.fa-book.fa-stack-1x
+      .col-lg-8.col-lg-offset-2
+        section.coderwall data-coderwall-username="tyabe" data-coderwall-orientation="(vertical or horizontal)"
+
+  .container
+    .row
+      .col-md-6
+        h3 GitHub Repos
+        div#gh_repos.list-group
+          p.loading Status updating...
+        javascript:
+          $(document).ready(function(){
+            if (!window.jXHR){
+              var jxhr = document.createElement('script');
+              jxhr.type = 'text/javascript';
+              jxhr.src = '/javascripts/libs/jXHR.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(jxhr, s);
+            }
+            github.showRepos({
+              user: 'tyabe',
+              count: 5,
+              skip_forks: true,
+              target: '#gh_repos'
+            });
+          });
+        = javascript_include_tag "github"
+      .col-md-6
+        h3 Slides
+        ul
+          li
+            a href="http://www.slideshare.net/tyabe/presentations" SlideShare
+          li
+            a href="https://speakerdeck.com/tyabe" Speaker Deck
+#f
+  .container
+    .row
+      p
+        | Crafted with 
+        i.fa.fa-heart
+        |  by BlackTie.co.
