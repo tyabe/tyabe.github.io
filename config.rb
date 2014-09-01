@@ -102,7 +102,8 @@ end
 
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-54111952-1'
-  ga.development = true
+  ga.development = false
+  ga.minify = true
 end
 
 require 'digest/md5'
