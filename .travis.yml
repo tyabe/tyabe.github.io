@@ -1,0 +1,13 @@
+language: ruby
+rvm: 2.1
+env:
+  global:
+    secure: KBNwhHqRKGxAvKpywA0vyyAGsJ+i65CPk/cutVjDPLEFqG3cfZUBdWgsiKtTcP4OhP5FgvmRECqPbiAI0sOJKSbVORe5wwPgUtmaBq19sEla7AuO3tVzrWik7nNaSqyDCQLW5ZOdx2+nBOzk3TEyHsiHj9ZUYbKKOjZR5L4NdOk=
+branches:
+  only: source
+  except: master
+
+before_script: '[ "$TRAVIS_BRANCH" == "source" ] && [ "$GH_TOKEN" ] && rake setup'
+script: rake build
+after_success: '[ "$TRAVIS_BRANCH" == "source" ] && [ "$GH_TOKEN" ] && rake publish'
+
