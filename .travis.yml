@@ -2,7 +2,11 @@ language: ruby
 rvm: 2.1
 env:
   global:
-    secure: KBNwhHqRKGxAvKpywA0vyyAGsJ+i65CPk/cutVjDPLEFqG3cfZUBdWgsiKtTcP4OhP5FgvmRECqPbiAI0sOJKSbVORe5wwPgUtmaBq19sEla7AuO3tVzrWik7nNaSqyDCQLW5ZOdx2+nBOzk3TEyHsiHj9ZUYbKKOjZR5L4NdOk=
+    - GIT_COMMITTER_NAME='Takeshi Yabe'
+    - GIT_COMMITTER_EMAIL='tyabe@nilidea.com'
+    - GIT_AUTHOR_NAME='Takeshi Yabe'
+    - GIT_AUTHOR_EMAIL='tyabe@nilidea.com'
+    - secure: KBNwhHqRKGxAvKpywA0vyyAGsJ+i65CPk/cutVjDPLEFqG3cfZUBdWgsiKtTcP4OhP5FgvmRECqPbiAI0sOJKSbVORe5wwPgUtmaBq19sEla7AuO3tVzrWik7nNaSqyDCQLW5ZOdx2+nBOzk3TEyHsiHj9ZUYbKKOjZR5L4NdOk=
 branches:
   only: source
   except: master
